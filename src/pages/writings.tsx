@@ -13,7 +13,7 @@ export default function Home() {
     setIsComponentVisible(!isComponentVisible);
   };
   const starterMessage = "The site is still under construction. Doing some wicked prompt engineering. Check back soon"
-  const systemMessage = "Respond with a joke and also tell them to check the website soon because it's still under construction."
+  const systemMessage = "Respond with a joke and also tell them to check the website soon because it's still under construction..."
 
   return (
     <main className="overflow-hidden w-full h-screen relative flex">
