@@ -13,12 +13,6 @@ dotenv.config();
 // OpenAI configuration creation
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
-  basePath: "https://oai.hconeai.com/v1",
-  baseOptions: {
-      headers: {
-          "Helicone-Auth": `Bearer ${process.env.HELICONE_API_KEY}`,
-      },
-  }
 });
 
 
