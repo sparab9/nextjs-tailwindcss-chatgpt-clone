@@ -2,7 +2,10 @@ import { DEFAULT_OPENAI_MODEL } from "@/shared/Constants";
 import { OpenAIModel } from "@/types/Model";
 import * as dotenv from "dotenv";
 import { NextApiRequest, NextApiResponse } from "next";
-import { ChatCompletionRequestMessage, Configuration, OpenAIApi } from "openai";
+import { ChatCompletionRequestMessage} from "openai";
+import { HeliconeProxyConfiguration as Configuration, HeliconeProxyOpenAIApi as OpenAIApi } from "helicone";
+
+
 // import rateLimit from 'express-rate-limit'
 // import slowDown from 'express-slow-down'
 
@@ -13,6 +16,9 @@ dotenv.config();
 // OpenAI configuration creation
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
+  heliconeMeta: {
+    apiKey: process.env.HELICONE_API_KEY,
+  },
 });
 
 

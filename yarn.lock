@@ -1501,6 +1501,13 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+helicone@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/helicone/-/helicone-1.0.4.tgz"
+  integrity sha512-AmdW7a/wFrEGdUJbYwD7kztVtDub7Y9oC5oRSFHNfnoHnG+yqDe8n2BTt8hdU6v6iogiV9vsPQ8qc9yotRtkLw==
+  dependencies:
+    openai "^3.3.0"
+
 hnswlib-node@^1.4.2:
   version "1.4.2"
   resolved "https://registry.npmjs.org/hnswlib-node/-/hnswlib-node-1.4.2.tgz"

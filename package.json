@@ -20,6 +20,7 @@
     "dotenv": "^16.0.3",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "helicone": "^1.0.4",
     "hnswlib-node": "^1.4.2",
     "langchain": "^0.0.118",
     "mixpanel-browser": "^2.46.0",
