@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  height: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+#__next {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+}
+
+.react-scroll-to-bottom--css-uzqrz-79elbk {
+  position: relative;
+}
+
+.react-scroll-to-bottom--css-ikyem-1n7m0yu {
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.react-tooltip {
+  font-size: 16px; /* Increased font size */
+  font-weight: 600; /* Bold font weight */
+  background-color: #ff9800; /* Bright orange background */
+  color: #fff; /* White text for contrast */
+  padding: 10px 15px; /* Enhanced padding */
+  border-radius: 5px;
+  border: 2px solid #d84315; /* A contrasting border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Prominent drop shadow */
+  transition: all 0.3s ease; /* Smoother transition for any effects you might add */
+  position: relative; /* Required for z-index to take effect */
+  z-index: 1000; /* A high value to ensure it's above most other elements */
+}
+
+/* Optional: Add a hover effect to make it even more interactive */
+.react-tooltip:hover {
+  background-color: #f57c00; /* A shade darker on hover */
+  transform: scale(1.1); /* Zoom in a bit to catch attention */
+}
