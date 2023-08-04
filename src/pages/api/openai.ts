@@ -6,14 +6,8 @@ import { ChatCompletionRequestMessage} from "openai";
 import { HeliconeProxyConfiguration as Configuration, HeliconeProxyOpenAIApi as OpenAIApi } from "helicone";
 
 
-// import rateLimit from 'express-rate-limit'
-// import slowDown from 'express-slow-down'
-
-
-// Get your environment variables
 dotenv.config();
 
-// OpenAI configuration creation
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
   heliconeMeta: {
@@ -21,8 +15,6 @@ const configuration = new Configuration({
   },
 });
 
-
-// OpenAI instance creation
 const openai = new OpenAIApi(configuration);
 
 // const getIP = request =>
@@ -51,7 +43,7 @@ const openai = new OpenAIApi(configuration);
 //         .map(middleware => middleware(request, response))
 //     )
 //   }
-
+//hopefully this works
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
