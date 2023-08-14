@@ -57,7 +57,7 @@ const Sidebar = () => {
           <SiLinkedin className="h-4 w-4" />
           LinkedIn
         </a>
-        <a className="flex py-3 px-3 items-center gap-3 rounded-md hover:bg-gray-500/10 transition-colors duration-200 text-white cursor-pointer text-sm">
+        <a href="https://github.com/sparab9" target="_blank"className="flex py-3 px-3 items-center gap-3 rounded-md hover:bg-gray-500/10 transition-colors duration-200 text-white cursor-pointer text-sm">
           <SiGithub className="h-4 w-4" />
           GitHub
         </a>
